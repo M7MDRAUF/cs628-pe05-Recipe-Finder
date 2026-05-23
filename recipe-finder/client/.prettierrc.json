@@ -1,0 +1,14 @@
+/**
+ * .prettierrc.json – Prettier formatting configuration
+ * Applied uniformly across all TypeScript/TSX/CSS files.
+ */
+{
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf"
+}

@@ -1,0 +1,185 @@
+/* RecipeForm.module.css */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.optional {
+  color: #94a3b8;
+  font-weight: 400;
+  font-size: 0.82rem;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  background: #fff;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #e85d04;
+  box-shadow: 0 0 0 3px rgba(232, 93, 4, 0.15);
+}
+
+.input:disabled,
+.select:disabled,
+.textarea:disabled {
+  background: #f8fafc;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.hasError .input,
+.hasError .select,
+.hasError .textarea {
+  border-color: #ef4444;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.5;
+}
+
+/* Row of three short inputs */
+.row3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .row3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ingredients fieldset */
+.fieldset {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.fieldset.hasError {
+  border-color: #ef4444;
+}
+
+.legend {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+  padding: 0 0.3rem;
+}
+
+.ingredientRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.removeBtn {
+  flex-shrink: 0;
+  background: #fee2e2;
+  border: none;
+  border-radius: 6px;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.8rem;
+  transition: background 0.15s;
+}
+
+.removeBtn:hover {
+  background: #fecaca;
+}
+
+.addIngredientBtn {
+  align-self: flex-start;
+  background: none;
+  border: 1.5px dashed #e85d04;
+  border-radius: 6px;
+  color: #e85d04;
+  cursor: pointer;
+  font-size: 0.87rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  transition: background 0.15s;
+  margin-top: 0.25rem;
+}
+
+.addIngredientBtn:hover {
+  background: #fff3ee;
+}
+
+/* Error messages */
+.error {
+  color: #ef4444;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+/* Submit row */
+.submitRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  background: #e85d04;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  min-width: 160px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #dc2f02;
+}
+
+.submitBtn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.submitBtn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}

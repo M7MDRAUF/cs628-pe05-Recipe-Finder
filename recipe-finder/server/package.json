@@ -1,0 +1,27 @@
+{
+  "name": "recipe-finder-server",
+  "version": "1.0.0",
+  "description": "Recipe Finder API – Node.js / Express / MongoDB Atlas back-end",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint . --ext .js"
+  },
+  "keywords": [
+    "recipe",
+    "express",
+    "mongodb"
+  ],
+  "author": "M7MDRAUF",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "mongodb": "^7.2.0",
+    "nodemon": "^3.1.14"
+  }
+}

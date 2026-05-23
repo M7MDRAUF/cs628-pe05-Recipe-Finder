@@ -1,0 +1,235 @@
+/* RecipeDetails.module.css */
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroImage {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.backLink {
+  color: #e85d04;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: color 0.15s;
+}
+
+.backLink:hover {
+  color: #dc2f02;
+  text-decoration: underline;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.badge {
+  background: #fff3ee;
+  color: #e85d04;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  align-self: center;
+  white-space: nowrap;
+}
+
+/* Meta strip */
+.meta {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.metaIcon {
+  font-size: 1.2rem;
+}
+
+.metaLabel {
+  display: block;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.metaValue {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sectionTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e85d04;
+}
+
+/* Ingredients */
+.ingredientList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.ingredientItem {
+  padding: 0.4rem 0.6rem;
+  background: #f8fafc;
+  border-left: 3px solid #e85d04;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92rem;
+  color: #334155;
+}
+
+/* Instructions */
+.instructions {
+  color: #334155;
+  line-height: 1.7;
+  font-size: 0.94rem;
+}
+
+.instructions p {
+  margin: 0 0 0.75rem;
+}
+
+/* Timestamps */
+.timestamps {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.editBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  background: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.editBtn:hover {
+  background: #2563eb;
+}
+
+.deleteBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background: #fecaca;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error state */
+.errorState {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.errorIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.errorActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.retryBtn {
+  background: #e85d04;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.retryBtn:hover {
+  background: #dc2f02;
+}

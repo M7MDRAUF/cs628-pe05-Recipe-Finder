@@ -1,0 +1,156 @@
+/* RecipeList.module.css */
+
+.wrapper {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* Left panel always visible */
+.listPanel {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Right panel slides in when detail is active */
+.detailPanel {
+  flex: 1.3;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  min-width: 0;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.header {
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 0.25rem;
+}
+
+.subheading {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Search + filter bar */
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.searchWrapper {
+  display: flex;
+  flex: 1;
+  min-width: 200px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  outline: none;
+  color: #1e293b;
+}
+
+.searchBtn {
+  background: #e85d04;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.15s;
+}
+
+.searchBtn:hover {
+  background: #dc2f02;
+}
+
+.categoryFilter {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  color: #1e293b;
+  background: #fff;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.categoryFilter:focus {
+  outline: none;
+  border-color: #e85d04;
+}
+
+/* Recipe grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* States */
+.errorState,
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #64748b;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.retryBtn {
+  margin-top: 1rem;
+  background: #e85d04;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.retryBtn:hover {
+  background: #dc2f02;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .detailPanel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
