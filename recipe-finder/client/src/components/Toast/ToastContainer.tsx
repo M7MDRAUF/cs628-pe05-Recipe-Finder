@@ -29,7 +29,7 @@ export function ToastContainer() {
             onClick={() => removeToast(toast.id)}
             aria-label="Dismiss notification"
           >
-            ✕
+            &times;
           </button>
         </div>
       ))}

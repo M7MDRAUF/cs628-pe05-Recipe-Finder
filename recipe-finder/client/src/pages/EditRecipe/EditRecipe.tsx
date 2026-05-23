@@ -72,7 +72,7 @@ export function EditRecipe() {
   if (error || !recipe) {
     return (
       <div className={styles.errorState} role="alert">
-        <p>⚠️ {error || "Recipe not found."}</p>
+        <p>! {error || "Recipe not found."}</p>
         <Link to="/recipes" className={styles.backLink}>
           ← Back to Recipes
         </Link>

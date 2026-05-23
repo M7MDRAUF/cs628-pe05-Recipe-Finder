@@ -321,7 +321,7 @@ export function RecipeForm({
                 aria-label={`Remove ingredient ${index + 1}`}
                 disabled={isLoading}
               >
-                ✕
+                &times;
               </button>
             )}
           </div>

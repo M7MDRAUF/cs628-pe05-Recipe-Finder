@@ -1,4 +1,4 @@
-/* Home.module.css */
+﻿/* Home.module.css */
 
 .page {
   display: flex;
@@ -7,7 +7,7 @@
   padding-bottom: 3rem;
 }
 
-/* ── Hero ─────────────────────────────────────────────────── */
+/* -- Hero -------------------------------------------------- */
 .hero {
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .accent {
-  color: #e85d04;
+  color: #EB4C4C;
 }
 
 .heroSubtitle {
@@ -50,7 +50,7 @@
 
 .primaryBtn {
   display: inline-block;
-  background: #e85d04;
+  background: #EB4C4C;
   color: #fff;
   text-decoration: none;
   padding: 0.75rem 1.75rem;
@@ -61,7 +61,7 @@
 }
 
 .primaryBtn:hover {
-  background: #dc2f02;
+  background: #C73232;
   transform: translateY(-2px);
 }
 
@@ -81,11 +81,28 @@
   background: #e2e8f0;
 }
 
+/* Hero badge -- replaces emoji illustration */
 .heroIllustration {
-  font-size: 8rem;
-  line-height: 1;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: float 3s ease-in-out infinite;
+}
+
+.heroBadge {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #EB4C4C 0%, #C73232 100%);
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  box-shadow: 0 8px 32px rgba(235, 76, 76, 0.35);
 }
 
 @keyframes float {
@@ -93,7 +110,7 @@
   50%       { transform: translateY(-12px); }
 }
 
-/* ── Features ─────────────────────────────────────────────── */
+/* -- Features ---------------------------------------------- */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -117,8 +134,9 @@
 }
 
 .featureIcon {
-  font-size: 2rem;
-  line-height: 1;
+  color: #EB4C4C;
+  display: flex;
+  align-items: center;
 }
 
 .featureTitle {
@@ -135,7 +153,7 @@
   margin: 0;
 }
 
-/* ── Responsive ───────────────────────────────────────────── */
+/* -- Responsive -------------------------------------------- */
 @media (max-width: 640px) {
   .hero {
     padding: 2rem 0;
@@ -152,6 +170,12 @@
   }
 
   .heroIllustration {
-    font-size: 5rem;
+    order: -1;
+  }
+
+  .heroBadge {
+    width: 100px;
+    height: 100px;
+    font-size: 1.8rem;
   }
 }

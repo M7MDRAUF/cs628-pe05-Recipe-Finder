@@ -1,4 +1,4 @@
-/* RecipeDetails.module.css */
+﻿/* RecipeDetails.module.css */
 
 .article {
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .backLink {
-  color: #e85d04;
+  color: #EB4C4C;
   text-decoration: none;
   font-size: 0.88rem;
   font-weight: 600;
@@ -28,7 +28,7 @@
 }
 
 .backLink:hover {
-  color: #dc2f02;
+  color: #C73232;
   text-decoration: underline;
 }
 
@@ -49,7 +49,7 @@
 
 .badge {
   background: #fff3ee;
-  color: #e85d04;
+  color: #EB4C4C;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.65rem;
@@ -108,7 +108,7 @@
   color: #1e293b;
   margin: 0;
   padding-bottom: 0.4rem;
-  border-bottom: 2px solid #e85d04;
+  border-bottom: 2px solid #EB4C4C;
 }
 
 /* Ingredients */
@@ -124,7 +124,7 @@
 .ingredientItem {
   padding: 0.4rem 0.6rem;
   background: #f8fafc;
-  border-left: 3px solid #e85d04;
+  border-left: 3px solid #EB4C4C;
   border-radius: 0 6px 6px 0;
   font-size: 0.92rem;
   color: #334155;
@@ -220,7 +220,7 @@
 }
 
 .retryBtn {
-  background: #e85d04;
+  background: #EB4C4C;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -231,5 +231,5 @@
 }
 
 .retryBtn:hover {
-  background: #dc2f02;
+  background: #C73232;
 }

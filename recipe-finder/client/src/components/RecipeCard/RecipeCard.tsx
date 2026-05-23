@@ -20,7 +20,7 @@ interface RecipeCardProps {
  * Uses a deterministic colour based on recipe name length.
  */
 function getPlaceholderImage(name: string): string {
-  const colours = ["e85d04", "dc2f02", "f48c06", "9d0208", "370617"];
+  const colours = ["EB4C4C", "C73232", "e63946", "9b2335", "6b0e1a"];
   const colour  = colours[name.length % colours.length];
   return `https://placehold.co/400x220/${colour}/ffffff?text=${encodeURIComponent(
     name.slice(0, 20)
@@ -61,13 +61,13 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
         {/* Meta: prep + cook + servings */}
         <div className={styles.meta}>
           {recipe.prepTime && (
-            <span title="Prep time">⏱ {recipe.prepTime}</span>
+            <span title="Prep time">Prep: {recipe.prepTime}</span>
           )}
           {recipe.cookTime && (
-            <span title="Cook time">🔥 {recipe.cookTime}</span>
+            <span title="Cook time">Cook: {recipe.cookTime}</span>
           )}
           {recipe.servings && (
-            <span title="Servings">🍴 {recipe.servings} servings</span>
+            <span title="Servings">{recipe.servings} servings</span>
           )}
         </div>
 

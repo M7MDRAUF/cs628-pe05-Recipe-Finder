@@ -21,6 +21,9 @@ Thumbs.db
 *.suo
 *.user
 
+# ── Playwright test artifacts ─────────────────────────────
+.playwright-mcp/
+
 # ── Logs ─────────────────────────────────────────────────
 logs/
 *.log

@@ -1,4 +1,4 @@
-/* ==========================================================
+﻿/* ==========================================================
    index.css  –  Recipe Finder global styles
    ==========================================================
    Design tokens, reset, typography, utility classes.
@@ -7,8 +7,8 @@
 
 /* ── Design Tokens ──────────────────────────────────────── */
 :root {
-  --color-primary:      #e85d04;
-  --color-primary-dark: #dc2f02;
+  --color-primary:      #EB4C4C;
+  --color-primary-dark: #C73232;
   --color-bg:           #f8fafc;
   --color-surface:      #ffffff;
   --color-text:         #1e293b;
@@ -109,7 +109,7 @@ h6 {
 
 /* ── Selection colour ───────────────────────────────────── */
 ::selection {
-  background: rgba(232, 93, 4, 0.2);
+  background: rgba(235, 76, 76, 0.2);
   color: var(--color-text);
 }
 

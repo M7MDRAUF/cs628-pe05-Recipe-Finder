@@ -1,4 +1,4 @@
-/* Spinner.module.css */
+﻿/* Spinner.module.css */
 
 .wrapper {
   display: flex;
@@ -13,7 +13,7 @@
   border-radius: 50%;
   border-style: solid;
   border-color: #e2e8f0;
-  border-top-color: #e85d04;
+  border-top-color: #EB4C4C;
   animation: spin 0.75s linear infinite;
 }
 

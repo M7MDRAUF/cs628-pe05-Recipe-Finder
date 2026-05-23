@@ -122,7 +122,9 @@ export function RecipeList() {
               aria-label="Search recipes"
             />
             <button type="submit" className={styles.searchBtn} aria-label="Search">
-              🔍
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
             </button>
           </div>
 
@@ -145,7 +147,7 @@ export function RecipeList() {
 
         {!loading && error && (
           <div className={styles.errorState} role="alert">
-            <p>⚠️ {error}</p>
+            <p>! {error}</p>
             <button className={styles.retryBtn} onClick={() => setRefreshTick((n) => n + 1)}>
               Try Again
             </button>
@@ -154,7 +156,11 @@ export function RecipeList() {
 
         {!loading && !error && recipes.length === 0 && (
           <div className={styles.emptyState}>
-            <p className={styles.emptyIcon}>🍳</p>
+            <p className={styles.emptyIcon}>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48" aria-hidden="true">
+                <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+              </svg>
+            </p>
             <p>No recipes found.</p>
             {(search || category !== "All") && (
               <button

@@ -1,4 +1,4 @@
-/* RecipeCard.module.css */
+﻿/* RecipeCard.module.css */
 
 .card {
   background: #fff;
@@ -43,7 +43,7 @@
 .badge {
   display: inline-block;
   background: #fff3ee;
-  color: #e85d04;
+  color: #EB4C4C;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.2rem 0.6rem;
@@ -66,7 +66,7 @@
 }
 
 .titleLink:hover {
-  color: #e85d04;
+  color: #EB4C4C;
 }
 
 .meta {
@@ -105,12 +105,12 @@
 }
 
 .viewBtn {
-  background: #e85d04;
+  background: #EB4C4C;
   color: #fff;
 }
 
 .viewBtn:hover {
-  background: #dc2f02;
+  background: #C73232;
 }
 
 .editBtn {

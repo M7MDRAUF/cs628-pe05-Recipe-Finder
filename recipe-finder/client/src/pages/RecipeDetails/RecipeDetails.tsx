@@ -86,7 +86,7 @@ export function RecipeDetails() {
   if (error) {
     return (
       <div className={styles.errorState} role="alert">
-        <p className={styles.errorIcon}>⚠️</p>
+        <p className={styles.errorIcon}>!</p>
         <p>{error}</p>
         <div className={styles.errorActions}>
           <button className={styles.retryBtn} onClick={() => setRetryCount((c) => c + 1)}>
@@ -137,7 +137,11 @@ export function RecipeDetails() {
           <div className={styles.meta}>
             {recipe.prepTime && (
               <div className={styles.metaItem}>
-                <span className={styles.metaIcon}>⏱</span>
+                <span className={styles.metaIcon}>
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+                  </svg>
+                </span>
                 <div>
                   <span className={styles.metaLabel}>Prep</span>
                   <span className={styles.metaValue}>{recipe.prepTime}</span>
@@ -146,7 +150,11 @@ export function RecipeDetails() {
             )}
             {recipe.cookTime && (
               <div className={styles.metaItem}>
-                <span className={styles.metaIcon}>🔥</span>
+                <span className={styles.metaIcon}>
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-8.17-15.03-8.17-15.03 0h15.03zM1.02 17h15v2h-15z"/>
+                  </svg>
+                </span>
                 <div>
                   <span className={styles.metaLabel}>Cook</span>
                   <span className={styles.metaValue}>{recipe.cookTime}</span>
@@ -155,7 +163,11 @@ export function RecipeDetails() {
             )}
             {recipe.servings && (
               <div className={styles.metaItem}>
-                <span className={styles.metaIcon}>🍴</span>
+                <span className={styles.metaIcon}>
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+                  </svg>
+                </span>
                 <div>
                   <span className={styles.metaLabel}>Servings</span>
                   <span className={styles.metaValue}>{recipe.servings}</span>
@@ -202,14 +214,14 @@ export function RecipeDetails() {
               to={`/recipes/${recipe._id}/edit`}
               className={styles.editBtn}
             >
-              ✏️ Edit Recipe
+              Edit Recipe
             </Link>
             <button
               className={styles.deleteBtn}
               onClick={() => setShowDeleteModal(true)}
               disabled={deleting}
             >
-              🗑 {deleting ? "Deleting…" : "Delete"}
+              {deleting ? "Deleting..." : "Delete"}
             </button>
           </div>
         </div>

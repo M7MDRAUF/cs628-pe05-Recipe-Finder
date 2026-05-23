@@ -1,4 +1,4 @@
-/* RecipeList.module.css */
+﻿/* RecipeList.module.css */
 
 .wrapper {
   display: flex;
@@ -73,7 +73,7 @@
 }
 
 .searchBtn {
-  background: #e85d04;
+  background: #EB4C4C;
   border: none;
   padding: 0 1rem;
   cursor: pointer;
@@ -82,7 +82,7 @@
 }
 
 .searchBtn:hover {
-  background: #dc2f02;
+  background: #C73232;
 }
 
 .categoryFilter {
@@ -98,7 +98,7 @@
 
 .categoryFilter:focus {
   outline: none;
-  border-color: #e85d04;
+  border-color: #EB4C4C;
 }
 
 /* Recipe grid */
@@ -123,7 +123,7 @@
 
 .retryBtn {
   margin-top: 1rem;
-  background: #e85d04;
+  background: #EB4C4C;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -135,7 +135,7 @@
 }
 
 .retryBtn:hover {
-  background: #dc2f02;
+  background: #C73232;
 }
 
 /* ── Responsive ───────────────────────────────────────── */

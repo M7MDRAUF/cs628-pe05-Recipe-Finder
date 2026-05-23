@@ -20,7 +20,7 @@ export function NotFound() {
           moved.
         </p>
         <Link to="/recipes" className={styles.homeBtn}>
-          🍽️ Go to Recipes
+          Go to Recipes
         </Link>
       </div>
     </div>
