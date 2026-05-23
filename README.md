@@ -219,60 +219,60 @@ Base URL: `http://localhost:5000/api`
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/01-home-page.png)
+![Home Page](recipe-finder/screenshots/01-home-page.png)
 
 ### Recipe List — Empty State
-![Recipe List Empty](screenshots/02-recipe-list-empty.png)
+![Recipe List Empty](recipe-finder/screenshots/02-recipe-list-empty.png)
 
 ### Add Recipe — Blank Form
-![Add Recipe Form](screenshots/03-add-recipe-empty-form.png)
+![Add Recipe Form](recipe-finder/screenshots/03-add-recipe-empty-form.png)
 
 ### Add Recipe — Validation Errors
-![Validation Errors](screenshots/04-add-recipe-validation-errors.png)
+![Validation Errors](recipe-finder/screenshots/04-add-recipe-validation-errors.png)
 
 ### Add Recipe — Filled Form
-![Filled Form](screenshots/05-add-recipe-filled-form.png)
+![Filled Form](recipe-finder/screenshots/05-add-recipe-filled-form.png)
 
 ### Recipe Added — Success Toast
-![Success Toast](screenshots/06-recipe-added-success-toast.png)
+![Success Toast](recipe-finder/screenshots/06-recipe-added-success-toast.png)
 
 ### Recipe Details (standalone)
-![Recipe Details](screenshots/07-recipe-details-page.png)
+![Recipe Details](recipe-finder/screenshots/07-recipe-details-page.png)
 
 ### Recipe List — Populated Grid
-![Recipe List](screenshots/08-recipe-list-with-recipes.png)
+![Recipe List](recipe-finder/screenshots/08-recipe-list-with-recipes.png)
 
 ### Search Filter
-![Search Filter](screenshots/09-recipe-list-search-filter.png)
+![Search Filter](recipe-finder/screenshots/09-recipe-list-search-filter.png)
 
 ### Category Filter
-![Category Filter](screenshots/10-recipe-list-category-filter.png)
+![Category Filter](recipe-finder/screenshots/10-recipe-list-category-filter.png)
 
 ### Recipe Details — Nested Route
 > Rendered as a nested route inside Recipe List via `<Outlet>` — the left panel shows the list and the right panel shows details for the selected recipe.
 
-![Nested Route](screenshots/11-recipe-details-nested-route.png)
+![Nested Route](recipe-finder/screenshots/11-recipe-details-nested-route.png)
 
 ### Delete Confirmation Modal
-![Delete Modal](screenshots/12-delete-confirmation-modal.png)
+![Delete Modal](recipe-finder/screenshots/12-delete-confirmation-modal.png)
 
 ### Edit Recipe Form
-![Edit Recipe](screenshots/13-edit-recipe-form.png)
+![Edit Recipe](recipe-finder/screenshots/13-edit-recipe-form.png)
 
 ### Edit Saved — Success Toast
-![Edit Toast](screenshots/14-edit-saved-toast.png)
+![Edit Toast](recipe-finder/screenshots/14-edit-saved-toast.png)
 
 ### Delete Success Toast
-![Delete Toast](screenshots/15-delete-success-toast.png)
+![Delete Toast](recipe-finder/screenshots/15-delete-success-toast.png)
 
 ### 404 Not Found
-![404 Page](screenshots/16-404-not-found-page.png)
+![404 Page](recipe-finder/screenshots/16-404-not-found-page.png)
 
 ### Mobile — Recipe List
-![Mobile List](screenshots/17-mobile-recipe-list.png)
+![Mobile List](recipe-finder/screenshots/17-mobile-recipe-list.png)
 
 ### Mobile — Hamburger Menu Open
-![Mobile Nav](screenshots/18-mobile-hamburger-menu-open.png)
+![Mobile Nav](recipe-finder/screenshots/18-mobile-hamburger-menu-open.png)
 
 ---
 
